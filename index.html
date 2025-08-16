@@ -5,34 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login & Registration Page</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-  <!-- LOGIN FORM -->
-  <div class="login-container" id="login">
-    <h2>Login</h2>
-    <form action="register.php" method="POST">
-      <input type="email" placeholder="Email" name="email" required />
-      <input type="password" placeholder="Password" name="password" required />
-      <button type="submit" class="btn" value="login" name="login" id="loginSubmit">Login</button>
-    </form>
-    <p>Don't have an account?</p>
-    <button id="registerButton">Register here</button>
-  </div>
+<div class="login-container" id="login">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="email" placeholder="Email" name="email" required />
+    <input type="password" placeholder="Password" name="password" required />
+    <button type="submit" class="btn">Login</button>
+  </form>
+  <p>Don't have an account?</p>
+  <button id="registerButton" type="button">Register here</button>
+</div>
 
-  <!-- REGISTRATION FORM (HIDDEN BY DEFAULT) -->
-  <div class="login-container" id="register" style="display:none;">
-    <h2>Register</h2>
-    <form action="register.php" method="POST">
-      <input type="text" placeholder="Name" name="name" required />
-      <input type="email" placeholder="Email" name="email" required />
-      <input type="password" placeholder="Password" name="password" required />
-      <button type="submit" class="btn" value="register" name="register" id="registerSubmit">Register</button>
-    </form>
-    <p>Already have an account?</p>
-    <button id="loginButton">Login</button> 
-  </div>
-  <script src="login.js"></script>
+<div class="login-container" id="register" style="display:none;">
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" placeholder="Name" name="name" required />
+    <input type="email" placeholder="Email" name="email" required />
+    <input type="password" placeholder="Password" name="password" required />
+    <button type="submit" class="btn">Register</button>
+  </form>
+  <p>Already have an account?</p>
+  <button id="loginButton" type="button">Login</button>
+</div>
 
-  
+<script>
+  const SUPABASE_URL = "https://iawjybkimcfijucfyhry.supabase.co";
+  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlhd2p5YmtpbWNmaWp1Y2Z5aHJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNjM4MDAsImV4cCI6MjA3MDgzOTgwMH0.DQZRlvF0RTP6m2fvuyGoRYg5rGBnHIbPXm79gLQP5ec";
+  const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  document.getElementById("registerButton").onclick = () => {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("register").style.display = "block";
+  };
+
+  document.getElementById("loginButton").onclick = () => {
+    document.getElementById("register").style.display = "none";
+    document.getElementById("login").style.display = "block";
+  };
+
+  document.getElementById("registerForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const name = e.target.name.value;
+
+    const { error } = await client.auth.signUp({
+      email,
+      password,
+      options: { data: { name } }
+    });
+
+    if (error) {
+      alert("Registration failed: " + error.message);
+    } else {
+      alert("Registration successful! Please check your email for confirmation.");
+    }
+  });
+
+  document.getElementById("loginForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const { data, error } = await client.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      alert("Login failed: " + error.message);
+    } else {
+      alert("Login successful! Welcome " + data.user.email);
+      window.location.href = "home.html";
+    }
+  });
+</script>
 </body>
 </html>

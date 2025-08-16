@@ -8,387 +8,387 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo -->
-                <div class="logo" onclick="showSection('home')">
-                    <img src="IMAGES/logo.jpg" alt="Bosslady lady salon" class="logo-image"/>
-                    <h1>
-                       BOSSLADY<br>
-                       <span>BEAUTY & HAIRDRESSING</span>
-                    </h1>
-
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="nav-desktop">
-                    <button onclick="showSection('home')" class="nav-link" data-section="home">Home</button>
-                    <button onclick="showSection('about')" class="nav-link" data-section="about">About Us</button>
-                    <button onclick="showSection('services')" class="nav-link" data-section="services">Services</button>
-                     <button onclick="showSection('gallery')" class="nav-link" data-section="gallery">Gallery</button>
-                    <button onclick="showSection('testimonials')" class="nav-link" data-section="testimonials">Testimonials</button>
-                    <button onclick="showSection('contact')" class="nav-link" data-section="contact">Contact</button>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
-            </div>
-
-            <!-- Mobile Navigation -->
-            <nav class="nav-mobile" id="mobileNav">
-                 <button onclick="showSection('home')" class="nav-link-mobile" data-section="home">Home</button>
-                <button onclick="showSection('about')" class="nav-link-mobile" data-section="about">About Us</button>
-                <button onclick="showSection('services')" class="nav-link-mobile" data-section="services">Services</button>
-                 <button onclick="showSection('gallery')" class="nav-link" data-section="gallery">Gallery</button>
-                <button onclick="showSection('testimonials')" class="nav-link-mobile" data-section="testimonials">Testimonials</button>
-                <button onclick="showSection('contact')" class="nav-link-mobile" data-section="contact">Contact</button>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="section hero-section active">
-            <div class="container">
-                <div class="hero-content">
-                    <!-- Image -->
-                    <div class="hero-image">
-                        <img src="IMAGES/home (1).jpg" alt="Professional hairstylist at work">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="hero-text">
-                        <h2>
-                            <span class="text-white">Your Hair Is</span><br>
-                            <span class="text-gold">Our Craft</span>
-                        </h2>
-                        
-                        <p>At Bosslady Salon, we transform your vision into reality. Our expert stylists combine artistry with the latest techniques to create stunning looks that enhance your natural beauty and boost your confidence.</p>
-                        
-                        <div class="hero-buttons">
-                            <button class="btn btn-primary">Book Now</button>
-                            <button class="btn btn-secondary" onclick="showSection('gallery')">View Gallery</button>
-                    
-
-                            <!--<button class="btn btn-secondary">View Gallery</button>-->
-                        </div>
-
-                        <!-- Stats -->
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <h4>5+</h4>
-                                <p>Years Experience</p>
-                            </div>
-                            <div class="stat">
-                                <h4>600+</h4>
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2> <span class="text-gold">Bosslady Salon</span></h2>
-                    <div class="divider"></div>
-                    <p>Where expertise meets elegance, and every client leaves feeling like royalty.</p>
-                </div>
-
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>About Us</h3>
-                        <p> Bosslady Salon has been a cornerstone of beauty and style in our community. What started as a small dream has grown into a premier destination for those who demand excellence in hair care and beauty services.</p>
-                        <p>Our founder, Grace Bulenywa, envisioned a space where artistry meets professionalism, where every client's unique beauty is celebrated and enhanced. Today, we continue that vision with a team of passionate stylists who share her commitment to excellence.</p>
-                        
-                    </div>
-                    <div class="about-image">
-                        <img src="IMAGES/about.jpg" alt="Salon interior">
-                    </div>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon">❤️</div>
-                        <h4>Passion for Beauty</h4>
-                        <p>We live and breathe beauty, bringing creativity and artistry to every service.</p>
-                    </div>
-                    
-                
-                    <div class="feature">
-                        <div class="feature-icon">👥</div>
-                        <h4>Client-Focused</h4>
-                        <p>Your satisfaction is our priority. We listen, understand, and deliver excellence.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🕒</div>
-                        <h4>Flexible Hours</h4>
-                        <p>Open 7 days a week with extended hours to fit your busy lifestyle.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section services-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><span class="text-white">Our</span> <span class="text-gold">Services</span></h2>
-                    <div class="divider"></div>
-                    <p>Discover our comprehensive range of hair and beauty services, each designed to bring out your best self.</p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                       <!-- <div class="service-icon">✂️</div>-->
-                        <h3>Braiding & Cornrows</h3>
-                        <p>Neat and stylish braiding and cornrows for all occasions.</p>
-                        <div class="service-price">From ksh 400</div>
-                        <ul class="service-features">
-                            <li>Box Braids (small, medium, large)</li>
-                            <li>Knotless Braids</li>
-                            <li>Cornrows (straight-back, side-part, creative designs)</li>
-                            <li>Stitch Cornrows</li>
-                            <li>Two-Strand Twists</li>
-                            <li>Lemonade Braids</li>
-                            <li>Goddess Braids</li>
-                            <li>Feed-in Braids</li>
-                        </ul>
-                        <button class="btn btn-primary">Book Service</button>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Hair Coloring</h3>
-                        <p>Expert color transformations using premium products for vibrant, long-lasting results.</p>
-                        <div class="service-price">From ksh 2000</div>
-                        <ul class="service-features">
-                            <li>Color Consultation</li>
-                            <li>Full Color</li>
-                            <li>Highlights</li>
-                            <li>Balayage</li>
-                        </ul>
-                        <button class="btn btn-primary">Book Service</button>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">✨</div>
-                        <h3>Hair Treatments</h3>
-                        <p>Revitalizing treatments to restore health, shine, and strength to your hair.</p>
-                        <div class="service-price">From ksh 100</div>
-                        <ul class="service-features">
-                            <li>Deep Conditioning</li>
-                            <li>Keratin Treatment</li>
-                            <li>Scalp Treatment</li>
-                            <li>Repair Masks</li>
-                        </ul>
-                        <button class="btn btn-primary">Book Service</button>
-                    </div>
-
-                    <div class="service-card">
-                       <!---- <div class="service-icon">👑</div>-->
-                        <h3>Hair Wash & Blowout</h3>
-                        <p>Relaxing wash and blowout for smooth, shiny, and bouncy hair.</p>
-                        <div class="service-price">From ksh 50</div>
-                        <ul class="service-features">
-                            <li>Basic Wash & Blowout</li>
-                            <li>Hydrating Wash & Blowout</li>
-                            <li>Volumizing Blowout</li>
-                            <li>Deep Conditioning + Blowout</li>
-                             <li>Scalp Treatment + Blowout</li>
-                              <li>Silk Press</li>
-                        </ul>
-                        <button class="btn btn-primary">Book Service</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="section testimonials-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><span class="text-white">Client</span> <span class="text-gold">Testimonials</span></h2>
-                    <div class="divider"></div>
-                    <p>Don't just take our word for it - hear what our amazing clients have to say about their experience.</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial">
-                        <div class="testimonial-header">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
-                            <div>
-                                <h4>Edith Asachita</h4>
-                                <p>Hair Color & Cut</p>
-                            </div>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <p>"Absolutely amazing experience! The stylists really listened to what I wanted and delivered beyond my expectations. My hair has never looked better!"</p>
-                    </div>
-
-                    <div class="testimonial">
-                        <div class="testimonial-header">
-                            <img src="IMAGES/ME.jpg" alt="Yvonne washika">
-                            <div>
-                                <h4>Yvonne Washika</h4>
-                                <p>Bridal Styling</p>
-                            </div>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <p>"They made my wedding day perfect! The trial run was thorough and the final look was exactly what I dreamed of. Professional and talented team."</p>
-                    </div>
-
-                    <div class="testimonial">
-                        <div class="testimonial-header">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Jennifer Lee">
-                            <div>
-                                <h4>Jennifer Lee</h4>
-                                <p>Keratin Treatment</p>
-                            </div>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <p>"My hair transformation is incredible! The keratin treatment has made my morning routine so much easier. Worth every penny!"</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Gallery Section -->
-<section id="gallery" class="section gallery-section">
+<!-- Header -->
+<header class="header">
     <div class="container">
-        <div class="section-header">
-            <h2><span class="text-gold">Our</span> <span class="text-white">Hairstyle Gallery</span></h2>
-            <div class="divider"></div>
-            <p>Explore our wide range of hairstyles and find your perfect match.</p>
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo" onclick="showSection('home')">
+                <img src="IMAGES/logo.jpg" alt="Bosslady lady salon" class="logo-image"/>
+                <h1>
+                    BOSSLADY<br>
+                    <span>BEAUTY & HAIRDRESSING</span>
+                </h1>
+
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <button onclick="showSection('home')" class="nav-link" data-section="home">Home</button>
+                <button onclick="showSection('about')" class="nav-link" data-section="about">About Us</button>
+                <button onclick="showSection('services')" class="nav-link" data-section="services">Services</button>
+                <button onclick="showSection('gallery')" class="nav-link" data-section="gallery">Gallery</button>
+                <button onclick="showSection('testimonials')" class="nav-link" data-section="testimonials">Testimonials</button>
+                <button onclick="showSection('contact')" class="nav-link" data-section="contact">Contact</button>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
         </div>
 
-        <div class="gallery-grid">
-            <!-- Hairstyle Card -->
-            <div class="gallery-card">
-                <img src="IMAGES/braids.jpg" alt="Braided Style">
-                <h4>Braids</h4>
-                <p class="price">From ksh 800 </p>
-            </div>
-
-            <div class="gallery-card">
-                <img src="IMAGES/boho_fm.jpg" alt="boho braids">
-                <h4>Boho Braids</h4>
-                <p class="price">From ksh 900 </p>
-            </div>
-
-            <div class="gallery-card">
-                <img src="IMAGES/butterfly.jpg" alt="Locs Retouch">
-                <h4>Butterfly Locs</h4>
-                <p class="price">From ksh.1500</p>
-            </div>
-
-            <div class="gallery-card">
-                <img src="IMAGES/Cornrow-Braids.jpg" alt="Cornrow-Braids ">
-                <h4>Cornrow-Braids</h4>
-                <p class="price">From ksh 700</p>
-            </div>
-             <div class="gallery-card">
-                <img src="IMAGES/kids.jpg" alt="Kids hairstyle">
-                <h4>Kids Hairstyle</h4>
-                <p class="price">From ksh.400</p>
-                 
-            </div>
-             <div class="gallery-card">
-                <img src="IMAGES/stitch braids.jpg" alt="Stitch braids">
-                <h4>Stitch Braids</h4>
-                <p class="price">From ksh.600</p>
-            </div>
-             <div class="gallery-card">
-                <img src="IMAGES/cornrow.jpg" alt="back style cornrows">
-                <h4>Advanced Cornrows</h4>
-                <p class="price">From ksh.900</p>
-            </div>
-             <div class="gallery-card">
-                <img src="IMAGES/mens_stitch.jpg" alt="Mens stitch Braids">
-                <h4>Mens stitch Braids</h4>
-                <p class="price">From ksh.500</p>
-            </div>
-            </div>
-        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <button onclick="showSection('home')" class="nav-link-mobile" data-section="home">Home</button>
+            <button onclick="showSection('about')" class="nav-link-mobile" data-section="about">About Us</button>
+            <button onclick="showSection('services')" class="nav-link-mobile" data-section="services">Services</button>
+            <button onclick="showSection('gallery')" class="nav-link" data-section="gallery">Gallery</button>
+            <button onclick="showSection('testimonials')" class="nav-link-mobile" data-section="testimonials">Testimonials</button>
+            <button onclick="showSection('contact')" class="nav-link-mobile" data-section="contact">Contact</button>
+        </nav>
     </div>
-</section>
+</header>
 
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><span class="text-white">Contact</span> <span class="text-gold">Us</span></h2>
-                    <div class="divider"></div>
-                    <p>Ready to transform your look? Get in touch with us to book your appointment or ask any questions.</p>
+<!-- Main Content -->
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section active">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Image -->
+                <div class="hero-image">
+                    <img src="IMAGES/home (1).jpg" alt="Professional hairstylist at work">
                 </div>
 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Get In Touch</h3>
-                        
-                        <div class="contact-grid">
-                            <div class="contact-item">
-                                <div class="contact-icon">📍</div>
-                                <h4>Address</h4>
-                                <p>BOMAS<br>Near Kimathi Butchery<br>Nyeri, kenya</p>
-                            </div>
+                <!-- Content -->
+                <div class="hero-text">
+                    <h2>
+                        <span class="text-white">Your Hair Is</span><br>
+                        <span class="text-gold">Our Craft</span>
+                    </h2>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">📞</div>
-                                <h4>Phone</h4>
-                                <p>0799545159<br>0796411548</p>
-                            </div>
+                    <p>At Bosslady Salon, we transform your vision into reality. Our expert stylists combine artistry with the latest techniques to create stunning looks that enhance your natural beauty and boost your confidence.</p>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">✉️</div>
-                                <h4>Email</h4>
-                                <p>ywashika@gmail.com<br>bookings@bossladysalon.com</p>
-                            </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Book Now</button>
+                        <button class="btn btn-secondary" onclick="showSection('gallery')">View Gallery</button>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">🕒</div>
-                                <h4>Hours</h4>
-                                <p>Mon-Fri: 9AM - 8PM<br>Sat: 8AM - 6PM<br>Sun: 10AM - 5PM</p>
-                            </div>
+
+                        <!--<button class="btn btn-secondary">View Gallery</button>-->
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>600+</h4>
+                            <p>Happy Clients</p>
                         </div>
                     </div>
-
-                    <div class="contact-form">
-                        <h3>Send Us a Message</h3>
-                        <form>
-                            <div class="form-row">
-                                <input type="text" placeholder="First Name" required>
-                                <input type="text" placeholder="Last Name" required>
-                            </div>
-                            <input type="email" placeholder="Email" required>
-                            <input type="tel" placeholder="Phone">
-                            <select>
-                                <option value="">Select a service</option>
-                                <option value="cut-style">Hair Cutting & Styling</option>
-                                <option value="color">Hair Coloring</option>
-                                <option value="treatment">Hair Treatments</option>
-                                <option value="special">Special Occasions</option>
-                                <option value="consultation">Consultation</option>
-                            </select>
-                            <textarea placeholder="Tell us about your hair goals or any questions you have..." rows="5"></textarea>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="Script.js"></script>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2> <span class="text-gold">Bosslady Salon</span></h2>
+                <div class="divider"></div>
+                <p>Where expertise meets elegance, and every client leaves feeling like royalty.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>About Us</h3>
+                    <p> Bosslady Salon has been a cornerstone of beauty and style in our community. What started as a small dream has grown into a premier destination for those who demand excellence in hair care and beauty services.</p>
+                    <p>Our founder, Grace Bulenywa, envisioned a space where artistry meets professionalism, where every client's unique beauty is celebrated and enhanced. Today, we continue that vision with a team of passionate stylists who share her commitment to excellence.</p>
+
+                </div>
+                <div class="about-image">
+                    <img src="IMAGES/about.jpg" alt="Salon interior">
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">❤️</div>
+                    <h4>Passion for Beauty</h4>
+                    <p>We live and breathe beauty, bringing creativity and artistry to every service.</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h4>Client-Focused</h4>
+                    <p>Your satisfaction is our priority. We listen, understand, and deliver excellence.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🕒</div>
+                    <h4>Flexible Hours</h4>
+                    <p>Open 7 days a week with extended hours to fit your busy lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="text-white">Our</span> <span class="text-gold">Services</span></h2>
+                <div class="divider"></div>
+                <p>Discover our comprehensive range of hair and beauty services, each designed to bring out your best self.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <!-- <div class="service-icon">✂️</div>-->
+                    <h3>Braiding & Cornrows</h3>
+                    <p>Neat and stylish braiding and cornrows for all occasions.</p>
+                    <div class="service-price">From ksh 400</div>
+                    <ul class="service-features">
+                        <li>Box Braids (small, medium, large)</li>
+                        <li>Knotless Braids</li>
+                        <li>Cornrows (straight-back, side-part, creative designs)</li>
+                        <li>Stitch Cornrows</li>
+                        <li>Two-Strand Twists</li>
+                        <li>Lemonade Braids</li>
+                        <li>Goddess Braids</li>
+                        <li>Feed-in Braids</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Hair Coloring</h3>
+                    <p>Expert color transformations using premium products for vibrant, long-lasting results.</p>
+                    <div class="service-price">From ksh 2000</div>
+                    <ul class="service-features">
+                        <li>Color Consultation</li>
+                        <li>Full Color</li>
+                        <li>Highlights</li>
+                        <li>Balayage</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Hair Treatments</h3>
+                    <p>Revitalizing treatments to restore health, shine, and strength to your hair.</p>
+                    <div class="service-price">From ksh 100</div>
+                    <ul class="service-features">
+                        <li>Deep Conditioning</li>
+                        <li>Keratin Treatment</li>
+                        <li>Scalp Treatment</li>
+                        <li>Repair Masks</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <!---- <div class="service-icon">👑</div>-->
+                    <h3>Hair Wash & Blowout</h3>
+                    <p>Relaxing wash and blowout for smooth, shiny, and bouncy hair.</p>
+                    <div class="service-price">From ksh 50</div>
+                    <ul class="service-features">
+                        <li>Basic Wash & Blowout</li>
+                        <li>Hydrating Wash & Blowout</li>
+                        <li>Volumizing Blowout</li>
+                        <li>Deep Conditioning + Blowout</li>
+                        <li>Scalp Treatment + Blowout</li>
+                        <li>Silk Press</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="text-white">Client</span> <span class="text-gold">Testimonials</span></h2>
+                <div class="divider"></div>
+                <p>Don't just take our word for it - hear what our amazing clients have to say about their experience.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                        <div>
+                            <h4>Edith Asachita</h4>
+                            <p>Hair Color & Cut</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Absolutely amazing experience! The stylists really listened to what I wanted and delivered beyond my expectations. My hair has never looked better!"</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="IMAGES/ME.jpg" alt="Yvonne washika">
+                        <div>
+                            <h4>Yvonne Washika</h4>
+                            <p>Bridal Styling</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"They made my wedding day perfect! The trial run was thorough and the final look was exactly what I dreamed of. Professional and talented team."</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Jennifer Lee">
+                        <div>
+                            <h4>Jennifer Lee</h4>
+                            <p>Keratin Treatment</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"My hair transformation is incredible! The keratin treatment has made my morning routine so much easier. Worth every penny!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="text-gold">Our</span> <span class="text-white">Hairstyle Gallery</span></h2>
+                <div class="divider"></div>
+                <p>Explore our wide range of hairstyles and find your perfect match.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Hairstyle Card -->
+                <div class="gallery-card">
+                    <img src="IMAGES/braids.jpg" alt="Braided Style">
+                    <h4>Braids</h4>
+                    <p class="price">From ksh 800 </p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="IMAGES/boho_fm.jpg" alt="boho braids">
+                    <h4>Boho Braids</h4>
+                    <p class="price">From ksh 900 </p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="IMAGES/butterfly.jpg" alt="Locs Retouch">
+                    <h4>Butterfly Locs</h4>
+                    <p class="price">From ksh.1500</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="IMAGES/Cornrow-Braids.jpg" alt="Cornrow-Braids ">
+                    <h4>Cornrow-Braids</h4>
+                    <p class="price">From ksh 700</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="IMAGES/kids.jpg" alt="Kids hairstyle">
+                    <h4>Kids Hairstyle</h4>
+                    <p class="price">From ksh.400</p>
+
+                </div>
+                <div class="gallery-card">
+                    <img src="IMAGES/stitch braids.jpg" alt="Stitch braids">
+                    <h4>Stitch Braids</h4>
+                    <p class="price">From ksh.600</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="IMAGES/cornrow.jpg" alt="back style cornrows">
+                    <h4>Advanced Cornrows</h4>
+                    <p class="price">From ksh.900</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="IMAGES/mens_stitch.jpg" alt="Mens stitch Braids">
+                    <h4>Mens stitch Braids</h4>
+                    <p class="price">From ksh.500</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="text-white">Contact</span> <span class="text-gold">Us</span></h2>
+                <div class="divider"></div>
+                <p>Ready to transform your look? Get in touch with us to book your appointment or ask any questions.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <h4>Address</h4>
+                            <p>BOMAS<br>Near Kimathi Butchery<br>Nyeri, kenya</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <h4>Phone</h4>
+                            <p>0799545159<br>0796411548</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <h4>Email</h4>
+                            <p>ywashika@gmail.com<br>bookings@bossladysalon.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 9AM - 8PM<br>Sat: 8AM - 6PM<br>Sun: 10AM - 5PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone">
+                        <select>
+                            <option value="">Select a service</option>
+                            <option value="cut-style">Hair Cutting & Styling</option>
+                            <option value="color">Hair Coloring</option>
+                            <option value="treatment">Hair Treatments</option>
+                            <option value="special">Special Occasions</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                        <textarea placeholder="Tell us about your hair goals or any questions you have..." rows="5"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="Script.js"></script>
 </body>
 </html>

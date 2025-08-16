@@ -1,5 +1,5 @@
 // Global variables
-let currentSection = 'home';
+let currentSection = 'index';
 let isMobileMenuOpen = false;
 
 // DOM elements
@@ -11,7 +11,7 @@ const mobileNav = document.getElementById('mobileNav');
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
     // Show home section by default
-    showSection('home');
+    showSection('index');
     
     // Add event listeners
     addEventListeners();
