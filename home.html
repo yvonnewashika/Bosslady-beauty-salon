@@ -226,10 +226,10 @@
             <div class="testimonials-grid">
                 <div class="testimonial">
                     <div class="testimonial-header">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                        <img src="IMAGES/asachita.jpg" alt="Edith Asachita">
                         <div>
                             <h4>Edith Asachita</h4>
-                            <p>Hair Color & Cut</p>
+                            <p>Hair Coloring</p>
                         </div>
                     </div>
                     <div class="stars">★★★★★</div>
@@ -362,31 +362,30 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <form>
-                        <div class="form-row">
-                            <input type="text" placeholder="First Name" required>
-                            <input type="text" placeholder="Last Name" required>
-                        </div>
-                        <input type="email" placeholder="Email" required>
-                        <input type="tel" placeholder="Phone">
-                        <select>
-                            <option value="">Select a service</option>
-                            <option value="cut-style">Hair Cutting & Styling</option>
-                            <option value="color">Hair Coloring</option>
-                            <option value="treatment">Hair Treatments</option>
-                            <option value="special">Special Occasions</option>
-                            <option value="consultation">Consultation</option>
-                        </select>
-                        <textarea placeholder="Tell us about your hair goals or any questions you have..." rows="5"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+    <h3>Send Us a Message</h3>
+    <form id="whatsappForm">
+        <div class="form-row">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
         </div>
-    </section>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone">
+        <select name="service">
+            <option value="">Select a service</option>
+            <option value="Hair Braiding and Cornrows">Hair Cutting & Styling</option>
+            <option value="Hair Coloring">Hair Coloring</option>
+            <option value="Hair Treatments">Hair Treatments</option>
+            <option value="Hair Wash and Blowout">Special Occasions</option>
+            <option value="Consultation">Consultation</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your hair goals or any questions you have..." rows="5"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+
+                
+    
 </main>
 
 <script src="Script.js"></script>

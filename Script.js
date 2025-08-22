@@ -117,21 +117,40 @@ function toggleMobileMenu() {
 }
 
 // Handle form submission
+// Handle form submission (send to WhatsApp)
+
 function handleFormSubmit(event) {
     event.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-    
-    // Simulate form submission
-    alert('Thank you for your message! We will get back to you soon.');
-    
+
+    // Collect form values directly
+    const firstName = event.target.firstName.value;
+    const lastName = event.target.lastName.value;
+    const email = event.target.email.value;
+    const phone = event.target.phone.value;
+    const service = event.target.service.value;
+    const message = event.target.message.value;
+
+    // Your WhatsApp number
+    const phoneNumber = "254799545159"; 
+
+    // Build WhatsApp message
+    const text = `Hello, my name is ${firstName} ${lastName}.
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+Message: ${message}`;
+
+    // Open WhatsApp
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+
     // Reset form
     event.target.reset();
-    
-    console.log('Form submitted:', data);
+
+    console.log("Form submitted to WhatsApp:", text);
 }
+
+
 
 // Handle booking button clicks
 function handleBookingClick(event) {
