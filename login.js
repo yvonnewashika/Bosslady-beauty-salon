@@ -1,7 +1,7 @@
 // Import Supabase client
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-// Replace these with your own Supabase project credentials
+// Replaced with  Supabase project credentials
 const SUPABASE_URL = "https://iawjybkimcfijucfyhry.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlhd2p5YmtpbWNmaWp1Y2Z5aHJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNjM4MDAsImV4cCI6MjA3MDgzOTgwMH0.DQZRlvF0RTP6m2fvuyGoRYg5rGBnHIbPXm79gLQP5ec";
 

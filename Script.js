@@ -11,7 +11,7 @@ const mobileNav = document.getElementById('mobileNav');
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
     // Show home section by default
-    showSection('index');
+    showSection('home');
     
     // Add event listeners
     addEventListeners();
@@ -131,7 +131,7 @@ function handleFormSubmit(event) {
     const message = event.target.message.value;
 
     // Your WhatsApp number
-    const phoneNumber = "254799545159"; 
+    const phoneNumber = "254701872212"; 
 
     // Build WhatsApp message
     const text = `Hello, my name is ${firstName} ${lastName}.
