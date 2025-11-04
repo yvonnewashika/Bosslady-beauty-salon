@@ -151,8 +151,7 @@ h1 span {
     font-weight: 500;
     padding: 0.75rem 0rem;
     cursor: pointer;
-    width: 100%;
-    text-align: center;
+    text-align: left;
     transition: all 0.3s ease;
 }
 
@@ -161,6 +160,25 @@ h1 span {
     color: #f59e0b;
     background-color: rgba(245, 158, 11, 0.1);
 }
+/* Logout Button Styles */
+.logout-btn {
+    background-color: #c0392b; /* Red tone for logout */
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
 
 /* Section Styles */
 .section {
@@ -713,4 +731,6 @@ h1 span {
     .hero-stats {
         grid-template-columns: 1fr;
     }
+    
+
 }

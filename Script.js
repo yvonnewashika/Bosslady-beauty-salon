@@ -32,6 +32,11 @@ function addEventListeners() {
             button.addEventListener('click', handleBookingClick);
         }
     });
+     // 🔹 Logout button
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', handleLogout);
+    }
 }
 
 // Show specific section
@@ -161,6 +166,20 @@ function handleBookingClick(event) {
     
     console.log('Booking button clicked');
 }
+// Handle logout button click
+function handleLogout(event) {
+    event.preventDefault();
+
+    // Example: clear any saved session or login data
+    localStorage.clear();
+    sessionStorage.clear();
+
+    // Redirect user
+    window.location.href = 'index.html'; // change to your actual login page
+
+    console.log("User logged out successfully");
+}
+
 
 // Handle window resize
 window.addEventListener('resize', function() {
