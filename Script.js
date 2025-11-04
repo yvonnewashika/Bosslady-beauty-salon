@@ -33,10 +33,12 @@ function addEventListeners() {
         }
     });
      // 🔹 Logout button
+   
     const logoutBtn = document.getElementById('logoutBtn');
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', handleLogout);
-    }
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', handleLogout);
+}
+
 }
 
 // Show specific section
