@@ -164,7 +164,7 @@ function handleBookingClick(event) {
     event.preventDefault();
     
     // Simulate booking action
-    alert('Booking feature coming soon! Please call us at 0799545159 to schedule your appointment.');
+    alert('Booking feature coming soon! Please call us at 0701872212 to schedule your appointment.');
     
     console.log('Booking button clicked');
 }
